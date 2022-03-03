@@ -1,0 +1,149 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.principal {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "content content content"
+    "footer footer footer";
+  grid-gap: 1vh;
+  margin: 1vh;
+  padding: 1vh;
+  height: 98vh;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+}
+
+h1 {
+  letter-spacing: 0.8vw;
+}
+
+header {
+  height: 8vh;
+  grid-area: header;
+}
+
+.header > nav {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.2vw;
+}
+
+.header > nav > ul > li > a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.header > nav > ul > li > a {
+  padding: 1vh;
+}
+
+.header > nav > a > img {
+  height: 9vh;
+}
+
+.menu {
+  max-width: 80%;
+  display: flex;
+  list-style: none;
+}
+
+.menu > li {
+  margin: 0 1vw;
+  padding: 1vh 1vw;
+  display: block;
+}
+
+.content {
+  height: 80vh;
+  width: 95vw;
+  margin: 0 auto;
+  grid-area: content;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.banner {
+  height: 100%;
+
+  padding: 2vh;
+}
+
+.banner > img {
+  width: 100%;
+  height: 100%;
+}
+
+.collections {
+  height: 60vh;
+  max-height: 60vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+h2 {
+  letter-spacing: 0.3vw;
+  text-align: center;
+  padding: 2vw;
+}
+
+.collections > ul {
+  width: 190vw;
+  text-align: center;
+}
+
+.collections > ul > li {
+  display: inline-block;
+  padding: 4vh;
+}
+
+.collections > ul > li > img {
+  height: 40vh;
+  width: 100%;
+}
+
+.footer {
+  height: 20vh;
+  grid-area: footer;
+  display: flex;
+  grid-template-areas: "newsletter contato";
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > ul > li > a > img {
+  height: 5vh;
+}
+
+.footer > ul > li {
+  display: inline-block;
+  padding-left: 7vh;
+}
+
+.footer > ul > li:nth-child(1) {
+  display: block;
+  padding: 1vh;
+  margin-bottom: 2vh;
+}
+
+.footer > ul > li:nth-child(6) {
+  display: block;
+  padding: 1vh;
+  margin-left: 6vh;
+}

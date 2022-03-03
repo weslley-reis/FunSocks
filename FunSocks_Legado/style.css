@@ -1,0 +1,138 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.principal {
+  margin: 0 auto;
+  padding: 0vh 1vh 1vh 1vh;
+  height: 98vh;
+}
+
+header {
+  background-color: white;
+  height: 11.5vh;
+  width: 100%;
+  position: fixed;
+}
+
+header > h1 {
+  letter-spacing: 0.8vw;
+}
+
+nav {
+  padding-top: 2vh;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+nav > ul {
+  text-align: right;
+  position: absolute;
+  right: 2vh;
+  top: 4.5vh;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin-left: 2vw;
+  letter-spacing: 0.2vw;
+}
+
+nav > ul > li > a {
+  padding: 2vh;
+  color: black;
+  cursor: pointer;
+}
+
+nav > ul > li > a:hover {
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+
+nav > h1 {
+  letter-spacing: 0.8vw;
+  position: absolute;
+  left: 5%;
+  top: 4.5vh;
+}
+
+nav > a > img {
+  height: 9vh;
+  text-align: left;
+}
+
+.content {
+  width: 98vw;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner > img {
+  width: 100%;
+}
+
+.collections {
+  height: 60vh;
+  max-height: 60vh;
+  overflow-x: scroll;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.collections > ul {
+  width: 190vw;
+  text-align: center;
+}
+
+.collections > ul > li {
+  display: inline-block;
+  padding: 4vh;
+}
+
+.collections > ul > li > img {
+  height: 40vh;
+  width: 100%;
+}
+
+.footer {
+  height: 20vh;
+}
+
+.footer > ul {
+  text-align: center;
+  padding: 4vh;
+}
+
+.footer > ul > li {
+  display: inline-block;
+  padding-left: 7vh;
+}
+
+.footer > ul > li:nth-child(1) {
+  display: block;
+  text-align: center;
+  padding: 1vw;
+}
+
+.footer > ul > li:nth-child(6) {
+  display: block;
+  text-align: center;
+  padding: 1vw;
+}
+
+.footer > ul > li > a > img {
+  height: 5vh;
+}
